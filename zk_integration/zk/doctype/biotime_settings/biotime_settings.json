@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-09-16 17:11:29.583638",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "url",
+  "section_break_2",
+  "user",
+  "column_break_4",
+  "pwd",
+  "section_break_6",
+  "page_size",
+  "column_break_8",
+  "timout"
+ ],
+ "fields": [
+  {
+   "description": "http://0.0.0.0:8080",
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pwd",
+   "fieldtype": "Data",
+   "label": "PWD",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "100",
+   "fieldname": "page_size",
+   "fieldtype": "Int",
+   "label": "Page Size",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "6000",
+   "fieldname": "timout",
+   "fieldtype": "Int",
+   "label": "Timout",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-09-18 20:12:05.437555",
+ "modified_by": "Administrator",
+ "module": "ZK",
+ "name": "BioTime Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

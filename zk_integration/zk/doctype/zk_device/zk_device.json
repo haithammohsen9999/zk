@@ -1,0 +1,258 @@
+{
+ "actions": [],
+ "autoname": "field:device_name",
+ "creation": "2021-04-01 22:50:04.854829",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "device_name",
+  "branch",
+  "connection_details",
+  "ip",
+  "password",
+  "period",
+  "active",
+  "ping",
+  "column_break_5",
+  "port",
+  "get_data_type",
+  "auto_attendance",
+  "get_after_mins",
+  "excecution_time",
+  "udp",
+  "biotime_details_section",
+  "serial_no",
+  "device_id",
+  "column_break_19",
+  "alias",
+  "area",
+  "last_connection_details_section",
+  "last_log_row",
+  "last_connection_time",
+  "last_connection_error"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "device_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Device Name",
+   "reqd": 1,
+   "translatable": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "connection_details",
+   "fieldtype": "Section Break",
+   "label": "Connection Details"
+  },
+  {
+   "columns": 1,
+   "default": "192.168.1.201",
+   "fieldname": "ip",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "IP",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "password",
+   "fieldtype": "Int",
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "4370",
+   "fieldname": "port",
+   "fieldtype": "Int",
+   "label": "Port",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "auto_attendance",
+   "fieldtype": "Check",
+   "label": "Auto Attendance "
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "last_connection_details_section",
+   "fieldtype": "Section Break",
+   "label": "Last Connection Details"
+  },
+  {
+   "columns": 2,
+   "fieldname": "last_log_row",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Last Log Row"
+  },
+  {
+   "fieldname": "last_connection_time",
+   "fieldtype": "Datetime",
+   "label": "Last Connection Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_connection_error",
+   "fieldtype": "Text",
+   "label": "Last Connection Error",
+   "read_only": 1
+  },
+  {
+   "default": "5",
+   "fieldname": "period",
+   "fieldtype": "Int",
+   "label": "Period Difference (Mins)"
+  },
+  {
+   "default": "60",
+   "depends_on": "auto_attendance",
+   "fieldname": "get_after_mins",
+   "fieldtype": "Int",
+   "label": "Get After (Mins)"
+  },
+  {
+   "default": "Today",
+   "depends_on": "auto_attendance",
+   "fieldname": "excecution_time",
+   "fieldtype": "Date",
+   "label": "Excecution Time",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "ping",
+   "fieldtype": "Check",
+   "label": "Ping"
+  },
+  {
+   "default": "1",
+   "fieldname": "udp",
+   "fieldtype": "Check",
+   "label": "UDP"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "columns": 1,
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "columns": 1,
+   "default": "Direct",
+   "fieldname": "get_data_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Get Data Type",
+   "options": "Direct\nBioTime"
+  },
+  {
+   "fieldname": "biotime_details_section",
+   "fieldtype": "Section Break",
+   "label": "BioTime Details"
+  },
+  {
+   "fieldname": "alias",
+   "fieldtype": "Data",
+   "label": "Device Alias",
+   "read_only": 1
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Serial No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "device_id",
+   "fieldtype": "Data",
+   "label": "Device ID",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-13 04:54:11.249039",
+ "modified_by": "Administrator",
+ "module": "ZK",
+ "name": "ZK Device",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "last_connection_time",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "device_name",
+ "track_changes": 1
+}
